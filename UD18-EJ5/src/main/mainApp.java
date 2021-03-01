@@ -7,6 +7,7 @@ import visual.Visual;
 public class mainApp {
 
 	public static void main(String[] args) {
+		
 		Visual v = new Visual();
 		Operacion op = new Operacion();
 		Database db = new Database(v.getUsuario(),v.getPass());

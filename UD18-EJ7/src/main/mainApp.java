@@ -7,6 +7,7 @@ import visual.Visual;
 public class mainApp {
 
 	public static void main(String[] args) {
+		
 		Visual v = new Visual();
 		Operacion op = new Operacion();
 		Database db = new Database(v.getUsuario(),v.getPass());
@@ -15,6 +16,7 @@ public class mainApp {
 		op.crearTabla(dbname, db);
 		op.insertF(dbname,db, v);
 		op.insertA(dbname, db, v);
+		op.insertD(dbname, db, v);
 		db.getValues(dbname);
 
 	}
